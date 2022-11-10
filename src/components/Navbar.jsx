@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <HStack
       py="11px"
-      px="6"
+      px={{ base: "4", lg: "6" }}
       w="full"
       spacing={6}
       borderBottomWidth="1px"
@@ -25,7 +25,7 @@ const Navbar = () => {
         </Text>
       </HStack>
       <Button
-        w={"56"}
+        w={{ base: "40", lg: "56" }}
         rounded={"xl"}
         size="md"
         textColor={"white"}

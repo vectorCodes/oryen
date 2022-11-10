@@ -18,25 +18,41 @@ const MarketCard = () => {
     >
       <Stack spacing={0}>
         <Text>Marketcap</Text>
-        <Text fontWeight={"bold"} textColor="white" fontSize={"3xl"}>
+        <Text
+          fontWeight={"bold"}
+          textColor="white"
+          fontSize={{ base: "2xl", lg: "3xl" }}
+        >
           $11.97M
         </Text>
       </Stack>
       <Stack spacing={0}>
         <Text>Marketcap</Text>
-        <Text fontWeight={"bold"} textColor="white" fontSize={"3xl"}>
+        <Text
+          fontWeight={"bold"}
+          textColor="white"
+          fontSize={{ base: "2xl", lg: "3xl" }}
+        >
           38.35B
         </Text>
       </Stack>
       <Stack spacing={0}>
         <Text>Marketcap</Text>
-        <Text fontWeight={"bold"} textColor="white" fontSize={"3xl"}>
+        <Text
+          fontWeight={"bold"}
+          textColor="white"
+          fontSize={{ base: "2xl", lg: "3xl" }}
+        >
           82K
         </Text>
       </Stack>
       <Stack spacing={0}>
         <Text>Marketcap</Text>
-        <Text fontWeight={"bold"} textColor="white" fontSize={"3xl"}>
+        <Text
+          fontWeight={"bold"}
+          textColor="white"
+          fontSize={{ base: "2xl", lg: "3xl" }}
+        >
           $0.0003
         </Text>
       </Stack>

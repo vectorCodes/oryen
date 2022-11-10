@@ -6,13 +6,19 @@ import Footer from "../components/Footer";
 
 const MainLayout = ({ children }) => {
   return (
-    <Flex height="100vh" overflow="hidden" bg="#12242d">
-      <Box w="64">
+    <Flex height="100vh" overflow="auto" bg="#12242d">
+      <Box
+        w="64"
+        display={{
+          base: "none",
+          lg: "flex",
+        }}
+      >
         <Sidebar />
       </Box>
       <Box w="full">
         <Navbar />
-        <Stack p={6} spacing={4}>
+        <Stack p={{ base: 4, lg: 6 }} spacing={4}>
           {children}
         </Stack>
       </Box>

@@ -13,7 +13,7 @@ import { TiTick } from "react-icons/ti";
 const FixedApyCard = ({ label, percent, description }) => {
   return (
     <HStack
-      p={4}
+      p={{ base: 2, lg: 4 }}
       pb={6}
       borderWidth="1px"
       borderColor="brand.500"
@@ -28,17 +28,21 @@ const FixedApyCard = ({ label, percent, description }) => {
             {label}
           </Text>
         </HStack>
-        <Text fontWeight={"bold"} fontSize="3xl" textColor={"white"}>
+        <Text
+          fontWeight={"bold"}
+          fontSize={{ base: "xl", lg: "3xl" }}
+          textColor={"white"}
+        >
           {percent}
         </Text>
         <Text textColor={"white"}>{description}</Text>
-        <Box position={"absolute"} top={2} left={-7}>
+        <Box position={"absolute"} top={{ base: -2, lg: 2 }} left={-7}>
           <Image src="/assets/fixed_glow.png" />
         </Box>
       </Stack>
 
-      <Box position={"absolute"} right={0} top={-4}>
-        <Image src="/assets/circle.png" />
+      <Box position={"absolute"} right={0} top={{ base: 2, lg: -5 }}>
+        <Image src="/assets/circle.png" w={{ base: "28", lg: "auto" }} />
       </Box>
     </HStack>
   );
