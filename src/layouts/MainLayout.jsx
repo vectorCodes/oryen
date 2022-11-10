@@ -22,7 +22,7 @@ const MainLayout = ({ children }) => {
           {children}
         </Stack>
       </Box>
-      <Box position={"fixed"} bottom={0} w="full">
+      <Box position={"fixed"} bottom={{ base: -1, lg: 0 }} w="full">
         <Footer />
       </Box>
     </Flex>
