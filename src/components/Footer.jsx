@@ -4,7 +4,7 @@ import { Button, Image, Spacer, HStack, Heading } from "@chakra-ui/react";
 const Footer = () => {
   return (
     <HStack
-      p={4}
+      p={{ base: 2, lg: 4 }}
       spacing={6}
       bg="secondary.900"
       w="full"
@@ -17,12 +17,12 @@ const Footer = () => {
       <Spacer />
       <HStack>
         <Image src="/assets/logo_icon.png" w="6" />
-        <Heading color="white" size="md">
+        <Heading color="white" size="sm">
           $0.5443
         </Heading>
       </HStack>
       <Button
-        w={"56"}
+        w={{ base: "32", lg: "56" }}
         rounded={"xl"}
         size="md"
         textColor={"white"}
